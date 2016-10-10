@@ -1,0 +1,18 @@
+I found little correlation between patient scores and hospital quality.  For the
+survey data I ranked hospitals using the hcahps_base_score from the hcahps data.
+I compared the top 500 hospitals to the top 500 hospitals in my list of overall
+hospital rankings based on the measures and found little cross over between the
+lists.  Out of each of the top 500 lists only 46 matched, or 9.2% crossover
+for the top 500.  The full list of cross over can be found in the table
+survey_crossover_quality.  The method gives a general sense of how patient
+responses correlate with overall CMS data.
+
+I found little correlation between patient consistency scores and prodcedural
+variability measures.  For the survey data I ranked hospitals using the
+hcahps_consistency_score from the hcahps data.  I compared the top 500 hospitals
+to the top 500 hospitals in my list of overall hospital variability rankings
+based on the measures and found little cross over between the lists.  Out of
+each of the top 500 lists only 35 matched or 7% crossover for the top 500.  The
+full list of cross over can be found in the table survey_crossover_variability.
+Again this method gives a general sense of how patientresponses correlate with
+overall CMS data.

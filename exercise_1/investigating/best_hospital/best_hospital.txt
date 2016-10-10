@@ -1,0 +1,25 @@
+1	MURRAY COUNTY MEMORIAL HOSPITAL
+2	MEMORIAL HOSPITAL OF CONVERSE COUNTY
+3	H B MAGRUDER MEMORIAL HOSPITAL
+4	FRANCES MAHON DEACONESS HOSPITAL
+5	SCHEURER HOSPITAL
+6	GRUNDY COUNTY MEMORIAL HOSPITAL
+7	SELBY GENERAL HOSPITAL
+8	UNITED HOSPITAL DISTRICT
+9	KANSAS MEDICAL CENTER LLC
+10	COMMUNITY HOSPITAL
+
+I ranked the hospitals based on three categories of measures: readmissions/mortality,
+effective care, and timely care.  First I looked at readmissions/mortality measures,
+ranking hospital performance based on the lowest percentages of mortality and
+readmissions across multiple measures.  Similarly I ranked hospitals across the
+effective care measures which were rate measures.  Higher rates being positive
+indicators in this case.  Lastly I ranked hospitals across timely care measures
+with the best hospitals having the lowest time to perform a service.  Using these
+three rankings I derived an average overall rank to determine final weight.
+If hospitals had the same score across any list (tied scores),the hospital with 
+the most observations was ranked higher.
+
+The overall method is appropriate because it takes the three main measures of
+quality: effective care, mortality/readmissions, and timeliness of care to create a
+average rank in order to get a thorough idea of hospital quality.

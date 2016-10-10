@@ -1,0 +1,23 @@
+1  ID
+2  UT
+3  SD
+4  MO
+5  IN
+6  FL
+7  ME
+8  OR
+9  CT
+10 MI
+
+
+For the best states ranking I used a similar approach as hospitals.  I generated
+three lists of rankings based on the measure groups: readmissions/mortality,
+effective care, and timely care.  This produced three lists of rankings by
+states.  I then took the average of the three list to get an overall ranking
+by state.  I incorporated two different tables for the state measures:
+readmissions_state_final and effective_care_state_final.  This showed the
+aggregate score by measure and by state.  The readmissions table had slightly
+different information than the hospital level data.  It provided the number of
+hospitals better than average.  To derive a score I ranked states with the
+highest % of hospitals that scored better.  Overall this method achieves the
+goal of defining quality by using all measures applicable to hospital care.
