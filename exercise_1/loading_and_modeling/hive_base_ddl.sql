@@ -17,7 +17,7 @@ STORED AS TEXTFILE
 CREATE EXTERNAL TABLE readmissions (provider_id int, hospital_name String,
 address String, city String, state String, zip_code int, county_name String,
 phone_number int, measure_name String, measure_id String,
-compare_to_national String, denominator String, lower_estimate String,
+compare_to_national String, denominator String, score String, lower_estimate String,
 higher_estimate String, footnote String, measure_start_date date,
 measure_end_date date)
 
@@ -86,3 +86,32 @@ WITH SERDEPROPERTIES (
 )
 STORED AS TEXTFILE
   LOCATION "/user/w205/hospital_compare/survey_responses";
+
+
+CREATE EXTERNAL TABLE effective_care_state (state String, condition String,
+measure_name String, measure_id String, score String, footnote String,
+measure_start_date date, measure_end_date date)
+
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+"separatorChar" = ",",
+"quoteChar" = '"',
+"escapeChar" = '\\'
+)
+STORED AS TEXTFILE
+  LOCATION "/user/w205/hospital_compare/effective_care_state";
+
+
+CREATE EXTERNAL TABLE readmissions_state (state String,
+measure_name String, measure_id String, num_hospitals_worse int,
+num_hospitals_same int, num_hospitals_better int, num_hospitals_few int,
+footnote String, measure_start_date date, measure_end_date date)
+
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+"separatorChar" = ",",
+"quoteChar" = '"',
+"escapeChar" = '\\'
+)
+STORED AS TEXTFILE
+  LOCATION "/user/w205/hospital_compare/readmissions_state";
