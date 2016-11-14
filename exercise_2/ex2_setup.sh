@@ -3,7 +3,7 @@ pip install tweepy
 
 #copy all files to user directory
 mkdir /home/w205/exercise_2
-cp -a ~/exercise_2 /home/w205/exercise_2
+cp -a ./ /home/w205/exercise_2
 
 #wordcount folder
 su - w205
