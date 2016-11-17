@@ -1,7 +1,7 @@
 Run everything from root.  The script will take care of creating directories/files as the w205 user.  To interact with the serving scripts switch to the w205 user when you after you are satisfied with the stream of tweets.
 
 Instructions
-git clone git@github.com:ericy51/W205-5_EricYang.git
+git clone https://github.com/ericy51/W205-5_EricYang.git
 cd W205-5_EricYang/exercise_2
 chmod +x ./ex2_setup.sh
 ./ex2_setup.sh
